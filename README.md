@@ -25,6 +25,8 @@ Ensure the following dependencies are installed:
 - Tailwind CSS CDN
 
 ---
+## Assumptions
+No User verification was needed as it was mentioned one user to take the quiz and thus no user database was created.
 
 ## Setup Instructions
 
