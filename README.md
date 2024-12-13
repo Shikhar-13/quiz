@@ -22,7 +22,7 @@ Ensure the following dependencies are installed:
 - Python 3.x
 - Django 4.x
 - Dependencies listed in `requirements.txt`
-- Node.js (for Tailwind CSS)
+- Tailwind CSS CDN
 
 ---
 
