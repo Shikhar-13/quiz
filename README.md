@@ -9,7 +9,9 @@ This repository hosts a **Django-based Quiz Application**, allowing users to tak
 - **Interactive Quiz Interface**: Engage users with an intuitive UI.
 - **Dynamic Question Management**: Add, update, or remove questions effortlessly.
 - **Database-Backed**: Persistent storage using SQLite.
+- **Responsive Design with Tailwind CSS**: Enhanced UI using modern, utility-first CSS framework.
 - **Ready for Deployment**: Configured for hosting on Vercel.
+- **API Endpoint for Questions**: Easily fetch quiz questions from the database.
 
 ---
 
@@ -20,6 +22,7 @@ Ensure the following dependencies are installed:
 - Python 3.x
 - Django 4.x
 - Dependencies listed in `requirements.txt`
+- Node.js (for Tailwind CSS)
 
 ---
 
@@ -38,18 +41,44 @@ Follow these steps to set up the project locally:
    pip install -r requirements.txt
    ```
 
-3. **Apply Migrations**:
+3. **Install Tailwind CSS**:
+   Navigate to the project directory and run:
+   ```bash
+   npm install
+   ```
+
+4. **Build CSS**:
+   To compile Tailwind CSS, run:
+   ```bash
+   npx tailwindcss -i ./src/input.css -o ./static/css/output.css --watch
+   ```
+
+5. **Apply Migrations**:
    ```bash
    python manage.py migrate
    ```
 
-4. **Run the Development Server**:
+6. **Run the Development Server**:
    ```bash
    python manage.py runserver
    ```
 
-5. **Access the Application**:
+7. **Access the Application**:
    Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
+
+---
+
+## API Endpoint
+
+### Fetch Questions
+
+Use the following API endpoint to retrieve questions from the database:
+
+```bash
+GET /api/questions/
+```
+
+This endpoint returns a list of quiz questions in JSON format. Ensure the server is running before making API calls.
 
 ---
 
@@ -94,7 +123,4 @@ Contributions are welcome! Follow these steps to contribute:
 5. **Submit a Pull Request**.
 
 ---
-
-
-
 
