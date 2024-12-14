@@ -81,11 +81,14 @@ import os
     # Local SQLite configuration
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'defaultdb',
+        'USER': 'avnadmin',
+        'PASSWORD': 'AVNS_jyX2qq_-mgnKiwW6Mcg',
+        'HOST': 'pg-2df00671-shikharguptaoct13-ddf7.e.aivencloud.com',
+        'PORT': '27819'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
