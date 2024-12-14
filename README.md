@@ -43,19 +43,10 @@ Follow these steps to set up the project locally:
    pip install -r requirements.txt
    ```
 
-3. **Install Tailwind CSS**:
-   Navigate to the project directory and run:
+4. **Apply Migrations**:
    ```bash
-   npm install
+   python manage.py makemigrations
    ```
-
-4. **Build CSS**:
-   To compile Tailwind CSS, run:
-   ```bash
-   npx tailwindcss -i ./src/input.css -o ./static/css/output.css --watch
-   ```
-
-5. **Apply Migrations**:
    ```bash
    python manage.py migrate
    ```
