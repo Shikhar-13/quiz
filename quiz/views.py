@@ -5,6 +5,7 @@ from .models import Question , Choice
 # Create your views here.
 def fetch_data(request):
     """Using api url to get the questions from database"""
+    Question.objects.all().delete()
     url = 'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
     response = requests.get(url)
     data = response.json()
